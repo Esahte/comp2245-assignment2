@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+header img {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+
+.monsters img {
+    float: right;
+}
+
+.perfection img {
+    width: 35%;
+    height: 35%;
+    float: left;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "header header"
+                         "main aside"
+                         "footer footer";
+    grid-template-columns: 4fr 2fr;
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #63B3ED;
+    color: #FFF;
+}
+
+main {
+    grid-area: main;
+    margin-right: 60px;
+    margin-left: 150px;
+}
+
+img[alt="Perfection"] {
+    margin-right: 7px;
+}
+
+aside {
+    grid-area: aside;
+    margin-left: 60px;
+    margin-right: 150px;
+}
+
+header h1 {
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-size: 32px;
+    color: #48BB78;
+}
+
+em {
+    color: #718096;
+}
+
+.archives, .social_media {
+    color: #48BB78;
+}
+
+.about {
+    color: #000;
+    background-color: #E2E8F0;
+    margin-top: 50px;
+    padding: 1px 10px;
+}
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.social_media a, .archives a {
+    color: #4299E1;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #2C5282;
+    color: #FFF;
+}
+
+footer p {
+    text-align: center;
+}
